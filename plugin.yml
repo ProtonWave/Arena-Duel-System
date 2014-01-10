@@ -1,0 +1,30 @@
+name: ArenaDuelSystem
+version: 1.0
+main: me.protonwave.ads.Main
+author: ProtonWave
+description: Basic Dueling plugin.
+
+commands:
+    duel:
+        usage: /<command>
+        description: Challenges a player to duel.
+    duelaccept:
+        usage: /<command>
+        aliases: [duela]
+        description: Accepts the challenge.
+    dueldecline:
+        usage: /<command>
+        aliases: [dueld]
+        description: Declines the challenge.
+    duelset1:
+        usage: /<command>
+        description: Sets the position of the first Combatant.
+ 
+    duelset2:
+        usage: /<command>
+        description: Sets the position of the second Combatant.
+               
+permissions:
+    duel.set:
+        description: Use the duelset1 and duelset2 command to change the combatants's spawning location.
+        default: op
